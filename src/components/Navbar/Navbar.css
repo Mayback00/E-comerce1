@@ -1,0 +1,22 @@
+/* Navbar.css */
+
+.nav-container {
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+  }
+  
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .navbar-logo {
+    margin: 0;
+  }
+  
+  .Cart {
+    font-size: 24px;
+  }
+  
