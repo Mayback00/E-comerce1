@@ -7,7 +7,9 @@ const Home = () => {
         <>
         <Navbar />
         <Banner />
-        <Products />
+        <div className="product-card-container">
+            <Products />
+        </div>
         </>
     )};
 

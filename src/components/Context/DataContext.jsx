@@ -7,7 +7,7 @@ const DataProvider = ({ children }) => {
     const [data, setData] = useState([]);
 
     useEffect(() =>{
-        axios("data,json").then((res)=> setData(res.data));
+        axios("data.json").then((res)=> setData(res.data));
     }, []);
 
     return <dataContext.Provider value={{ data }}>{children}</dataContext.Provider>
