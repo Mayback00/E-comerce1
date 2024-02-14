@@ -53,6 +53,10 @@
     font-weight: bold;
   }
 
+  .quanty-number {
+    color: gray;
+  }
+
   .counter-button:hover {
     transform: scale(120%);
     

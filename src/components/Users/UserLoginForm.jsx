@@ -6,11 +6,11 @@ const UserLoginForm = () => {
           <div className="contentWrapper">
             <div className="container">
               <forms>
-                <h1>Login</h1>
+                <h1>Iniciar seción</h1>
                 <input type="email" placeholder="E-mail"/>
                 <input type="password" placeholder="Contraseña" />
                 
-                <button>Acessar</button>
+                <button>Ingresar</button>
                 <div className="__container">
                   <a href="#">Olvidó la contraseña?</a>
                   <hr/>
