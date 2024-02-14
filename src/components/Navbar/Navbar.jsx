@@ -8,17 +8,15 @@ const Navbar = () => {
   const { cart } = useContext(dataContext);
 
   return (
-    <div className="nav-container">
       <nav className="navbar">
         <Link to={"/"} className="navbar-link">
           <h1 className="navbar-logo">Shop</h1>
         </Link>
-        <Link to={"user"}>User</Link>
-        <Link to="cart" className="navbar-link-cart">
+        <Link to={"user"} className="items">User</Link>
+        <Link to={"cart"} className="navbar-link-cart items">
           🛒{cart.length > 0 ? <TotalItems /> : null}
         </Link>
       </nav>
-    </div>
   )
 }
 
