@@ -45,6 +45,20 @@
     margin-top: 40px;
   }
 
+  .counter-button {
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  .counter-button:hover {
+    transform: scale(120%);
+    
+  }
+
+  .cart-delete-button {
+    cursor: pointer;
+  }
+
   .cart-container {
     margin-top: 20%;
     margin-left: 10%;
