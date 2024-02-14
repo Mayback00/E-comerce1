@@ -1,0 +1,76 @@
+/* CartContent.css */
+
+.cartContent {
+    display: flex;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px;
+    background-color: #f9f9f9;
+    flex-direction: column; /* Cambiado a dirección de columna */
+    align-items: center; /* Alinea los elementos al centro */
+  }
+  
+  .cartContent img {
+    max-width: 100%;
+    max-height: 100%; /* Limita la altura de las imágenes */
+    object-fit: contain; /* Cambiado a 'contain' para que no recorte la imagen */
+    border-bottom: 1px solid #ddd;
+    margin-bottom: 15px;
+  }
+  
+  .cartContentText {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cartContent h3 {
+    margin: 10px 0;
+    color: #333;
+    text-align: center;
+  }
+  
+  .cartContent h4 {
+    color: #e44d26;
+    text-align: center;
+    margin-top: auto; /* Coloca el h4 en la parte inferior del contenedor */
+  }
+  
+  .cartTotal {
+    text-align: center;
+  }
+  
+  .cart-message-center{
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  .cart-container {
+    margin-top: 20%;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr); /* 4 cards per row */
+    grid-auto-rows: auto;
+    grid-gap: 10px; /* Adjust the gap between cards as needed */
+  }
+  
+  /* Responsive Design - puedes ajustar según sea necesario */
+  @media (max-width: 1200px) {
+    .cartContent img {
+      max-width: 40%;
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .cartContent img {
+      max-width: 50%;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    .cartContent img {
+      max-width: 60%;
+    }
+  }
+  
