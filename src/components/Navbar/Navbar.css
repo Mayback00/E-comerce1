@@ -10,6 +10,10 @@
     z-index:  999;
   }
 
+  .login-icon {
+    transform: translate(40%, 20%);
+  }
+
   .navbar a {
     text-decoration: none;
     color: inherit;
@@ -17,6 +21,7 @@
   
   .navbar-logo {
     margin: 0;
+    transform: translateY(15%);
   }
   
   .Cart {
@@ -25,5 +30,11 @@
     text-decoration: none;
   }
   
+.items {
+  padding-right: 30px;
+}
   
-  
+.navbar-right {
+  display: flex;
+  align-items: center;
+}

@@ -3,8 +3,6 @@
     background-position: center;
     height: 100vh;
     width: 100vw;
-
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../Banner/images/bg_img.jpg);
 }
 
 .banner-container {
@@ -22,6 +20,5 @@
 
 .banner p {
     font-size: 30px;
-    color: rgb(207, 163, 226);
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
 }

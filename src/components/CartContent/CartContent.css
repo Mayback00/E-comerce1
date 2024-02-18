@@ -1,115 +1,157 @@
-
 .cart-content-wrapper {
-  width: 100%;
-  height: 100vh;
-}
+  display: grid;
+  width: 60vw;
+  max-width: 800px;
+  margin: 80px auto;
+  background: rgba(255, 255, 255, 0.9);
+  color: #111;
+  backdrop-filter: blur(10px);
+  border: 2px solid rgba(0, 0, 0, 0.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
 
-.cartContent {
-    display: flex;
-    border: 1px solid #ddd;
-    padding: 10px;
-    margin: 10px;
-    background-color: #f9f9f9;
-    flex-direction: column; /* Cambiado a dirección de columna */
-    align-items: center; /* Alinea los elementos al centro */
+  @media (max-width: 900px) {
+    width: 70vw;
   }
-  
-  .cartContent img {
-    max-width: 100%;
-    max-height: 100%; 
-    object-fit: contain; 
-    border-bottom: 1px solid #ddd;
-    margin-bottom: 15px;
+
+  @media (max-width: 600px) {
+    width: 80vw;
   }
-  
-  .cartContentText {
-    flex-grow: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .cartContent h3 {
-    margin: 10px 0;
-    color: #0f0f0f;
-    text-align: center;
-  }
-  
+
   .cartContent h4 {
-    color: #e44d26;
-    text-align: center;
-    margin-top: auto; /* Coloca el h4 en la parte inferior del contenedor */
-  }
-  
-  .cartTotal {
-    text-align: center;
-  }
-  
-  .cart-message-center{
-    text-align: center;
-    margin-top: 20%;
-  }
-
-  .cart-items-total {
-    font-family: 'Times New Roman', Times, serif;
-  }
-
-  .counter-button {
-    cursor: pointer;
-    font-weight: bold;
-  }
-
-  .quanty-number {
-    color: gray;
-  }
-
-  .counter-button:hover {
-    transform: scale(120%);
-    
-  }
-
-  .counter-button:active {
-    transform: scale(100%);
-  }
-
-  .cart-delete-button {
-    cursor: pointer;
-  }
-
-  .cart-delete-button:hover {
-    transform: scale(120%);
-  }
-
-  .cart-delete-button:active {
-    transform: scale(100%);
+    color: #e48226;
+    justify-self: right;
   }
 
   .cart-container {
-    padding-top: 5%;
-    position: relative;
-    margin-left: 10%;
-    margin-right: 10%;
-    display: grid;
-    grid-template-columns: repeat(10, 1fr); /* 4 cards per row */
-    grid-auto-rows: auto;
-    grid-gap: 10px; /* Adjust the gap between cards as needed */
-  }
-  
-  /* Responsive Design - puedes ajustar según sea necesario */
-  @media (max-width: 1200px) {
-    .cartContent img {
-      max-width: 40%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-height: 500px;
+    overflow-y: auto; 
+
+    .cartContent {
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 20px;
+      align-items: center;
+      justify-content: center;
+      background: #fff; 
+      border: 1px solid #ddd;
+      border-radius: 8px;
+      padding: 20px;
+      margin-bottom: 20px;
+    
+      @media (min-width: 600px) {
+        grid-template-columns: repeat(5, 1fr);
+        justify-content: flex-start;
+      }
+    
+      .counter-box {
+        display: inline-grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        border: 2px solid rgb(132, 132, 132);
+        border-radius: 10px;
+        text-align: center;
+        justify-items: center;
+      }
+
+      .description {
+        max-width: 75%;
+        display: block;
+        font-size: 14px;
+        color: #43484D;
+        font-weight: 400;
+        position: relative;
+        overflow: hidden;
+        white-space: normal;
+      }
+
+      .cartTotal {
+        width: 83px;
+        padding-top: 27px;
+        text-align: center;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+      }
+
+      .cart-message-center {
+        text-align: center;
+        margin-top: 20%;
+        color: #43484D;
+      }
+
+      .cart-items-total {
+        font-family: 'Times New Roman', Times, serif;
+      }
+
+      .counter-button {
+        border: none;
+        width: 32px;
+        font-size: 16px;
+        color: #43484D;
+        font-weight: 300;
+        transform: translateY(10%);
+      }
+
+      .cart-delete-button {
+        color: #e47911; /* Amarillo similar al de Amazon */
+        font-size: 16px;
+        font-weight: 500; /* Ajustado el grosor del texto */
+        display: flex;
+        justify-content: center;
+        cursor: pointer;
+      }
+      
+      .counter-button,
+      .cart-delete-button {
+        transition: transform 0.2s ease-in-out; /* Agregado efecto de transición a los botones */
+      
+        &:hover {
+          transform: scale(1.1);
+        }
+      
+        &:active {
+          transform: scale(1);
+        }
+      }
+
+      .quanty-number {
+        color: gray;
+      }
+
+      .counter-button:hover {
+        transform: scale(120%) translateY(10%);
+      }
+
+      .counter-button:active {
+        transform: scale(100%) translateY(10%);
+      }
+
+      .cart-delete-button {
+        cursor: pointer;
+      }
+
+      @media (min-width: 600px) {
+        grid-template-columns: .5fr 1fr 1fr 1fr 1fr; /* Adjusted grid layout for larger screens */
+      }
+
+      img {
+        max-width: 150px;
+
+        @media (max-width: 600px) {
+          max-width: 100px;
+        }
+      }
+
+      .cartContent h4 {
+        text-align: center;
+
+        @media (min-width: 600px) {
+          text-align: left;
+        }
+      }
     }
   }
-  
-  @media (max-width: 900px) {
-    .cartContent img {
-      max-width: 50%;
-    }
-  }
-  
-  @media (max-width: 600px) {
-    .cartContent img {
-      max-width: 60%;
-    }
-  }
-  
+}

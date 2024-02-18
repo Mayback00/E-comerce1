@@ -1,5 +1,6 @@
 import { useContext } from "react";
 import { dataContext } from  "../Context/DataContext";
+import { FaMinusCircle, FaPlusCircle } from "react-icons/fa";
 
 const CartItemCounter = ({ product }) => {
     const { cart, setCart, buyProducts } = useContext(dataContext);
@@ -14,9 +15,9 @@ const CartItemCounter = ({ product }) => {
 
   return (
     <>
-    <p className="counter-button" onClick={()=> buyProducts(product)}>🔺</p>
+    <p className="counter-button" onClick={()=> buyProducts(product)}><FaPlusCircle /></p>
     <p className="quanty-number">{product.quanty}</p>
-    <p className="counter-button" onClick={decrese}>🔻</p>
+    <p className="counter-button" onClick={decrese}><FaMinusCircle /></p>
     </>
   )
 }

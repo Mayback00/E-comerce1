@@ -14,7 +14,7 @@ function App() {
       <DataProvider>
         <BrowserRouter>
           <Navbar />
-          <div className="general-container">
+          <div className="general-container bg">
             <Routes>
               <Route path="/" element={<Home />} />
             </Routes>
