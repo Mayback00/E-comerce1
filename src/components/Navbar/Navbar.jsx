@@ -13,6 +13,7 @@ const Navbar = () => {
           <h1 className="navbar-logo">Shop</h1>
         </Link>
         <Link to={"user"} className="items">User</Link>
+        <Link to={"login"} className="items">Login</Link>
         <Link to={"cart"} className="navbar-link-cart items">
           🛒{cart.length > 0 ? <TotalItems /> : null}
         </Link>
@@ -21,3 +22,4 @@ const Navbar = () => {
 }
 
 export default Navbar;
+

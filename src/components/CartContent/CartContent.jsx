@@ -10,6 +10,7 @@ const CartContent = () => {
 
 return (
   <>
+  <div className="cart-content-wrapper">
     {cart.length > 0 ? (
       <>
         <CartElement />
@@ -20,6 +21,7 @@ return (
       <h2 className="cart-message-center">No hay productos en el carrito</h2>
       </>
     )}
+  </div>
   </>
 );
 }
