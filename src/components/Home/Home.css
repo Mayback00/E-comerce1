@@ -1,3 +1,29 @@
 .home-texts{
     text-align: center;
   }
+
+  .products-title {
+    margin-top: 5%;
+  }
+
+  .product-card-container {
+    margin-top: 5vh;
+    margin-left: 10%;
+    margin-right: 10%;
+    display: flex; 
+    overflow-x: auto;
+  
+    @media (max-width: 1200px) {
+     
+      flex-wrap: nowrap;
+    }
+  
+    @media (max-width: 900px) {
+      flex-wrap: nowrap;
+    }
+  
+    @media (max-width: 600px) {
+      flex-wrap: nowrap;
+    }
+  }
+  

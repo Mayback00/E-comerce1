@@ -6,6 +6,7 @@ import LoginForm from './components/Users/LoginForm';
 import UserLogin from './components/Users/UserLogin';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
+import ProductCard from './components/Products/ProductCard';
 
 
 function App() {
@@ -20,6 +21,7 @@ function App() {
             </Routes>
             <div className="internal-container general-container">
               <Routes>
+                <Route path="product" element={<ProductCard />} />
                 <Route path="/cart" element={<CartContent />} />
                 <Route path="/user" element={<UserLogin />} />
                 <Route path="/login" element={<LoginForm />} />

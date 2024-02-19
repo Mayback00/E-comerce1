@@ -1,173 +1,82 @@
 [
-       {
-          "id": 1,
-          "title":"Key Holder",
-          "description":"Attractive Design Metallic.",
-          "price":30,
-          "discountPercentage":2.92,
-          "rating":4.92,
-          "stock":54,
-          "brand":"Golden",
-          "category":"home-decoration",
-          "thumbnail":"https://i.dummyjson.com/data/products/30/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/30/1.jpg",
-             "https://i.dummyjson.com/data/products/30/2.jpg",
-             "https://i.dummyjson.com/data/products/30/3.jpg",
-             "https://i.dummyjson.com/data/products/30/thumbnail.jpg"
-          ]
-       },
-       {
-          "id": 2,
-          "title":"MacBook Pro",
-          "description":"2021 with mini-LED display.",
-          "price":1749,
-          "discountPercentage":11.02,
-          "rating":4.57,
-          "stock":83,
-          "brand":"Apple",
-          "category":"laptops",
-          "thumbnail":"https://i.dummyjson.com/data/products/6/thumbnail.png",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/6/1.png",
-             "https://i.dummyjson.com/data/products/6/2.jpg",
-             "https://i.dummyjson.com/data/products/6/3.png",
-             "https://i.dummyjson.com/data/products/6/4.jpg"
-          ]
-       },
-       {
-          "id": 3,
-          "title":"iPhone X",
-          "description":"SIM-Free, 6.5-inch Super Retina.",
-          "price":899,
-          "discountPercentage":17.94,
-          "rating":4.44,
-          "stock":34,
-          "brand":"Apple",
-          "category":"smartphones",
-          "thumbnail":"https://i.dummyjson.com/data/products/2/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/2/1.jpg",
-             "https://i.dummyjson.com/data/products/2/2.jpg",
-             "https://i.dummyjson.com/data/products/2/3.jpg",
-             "https://i.dummyjson.com/data/products/2/thumbnail.jpg"
-          ]
-       },
-       {
-          "id": 4,
-          "title":"Samsung Universe 9",
-          "description":"Samsung's new variant.",
-          "price":1249,
-          "discountPercentage":15.46,
-          "rating":4.09,
-          "stock":36,
-          "brand":"Samsung",
-          "category":"smartphones",
-          "thumbnail":"https://i.dummyjson.com/data/products/3/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/3/1.jpg"
-          ]
-       },
-       {
-          "id": 5,
-          "title":"OPPOF19",
-          "description":"OPPO F19.",
-          "price":280,
-          "discountPercentage":17.91,
-          "rating":4.3,
-          "stock":123,
-          "brand":"OPPO",
-          "category":"smartphones",
-          "thumbnail":"https://i.dummyjson.com/data/products/4/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/4/1.jpg",
-             "https://i.dummyjson.com/data/products/4/2.jpg",
-             "https://i.dummyjson.com/data/products/4/3.jpg",
-             "https://i.dummyjson.com/data/products/4/4.jpg",
-             "https://i.dummyjson.com/data/products/4/thumbnail.jpg"
-          ]
-       },
-       {
-          "id": 6,
-          "title":"Huawei P30",
-          "description":"Huawei’s re-badged P30 Pro New Edition.",
-          "price":499,
-          "discountPercentage":10.58,
-          "rating":4.09,
-          "stock":32,
-          "brand":"Huawei",
-          "category":"smartphones",
-          "thumbnail":"https://i.dummyjson.com/data/products/5/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/5/1.jpg",
-             "https://i.dummyjson.com/data/products/5/2.jpg",
-             "https://i.dummyjson.com/data/products/5/3.jpg"
-          ]
-       },
-       {
-          "id":7,
-          "title":"Samsung Galaxy Book",
-          "description":"S (2020) Intel Lakefield Chip, 8GB RAM.",
-          "price":1499,
-          "discountPercentage":4.15,
-          "rating":4.25,
-          "stock":50,
-          "brand":"Samsung",
-          "category":"laptops",
-          "thumbnail":"https://i.dummyjson.com/data/products/7/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/7/1.jpg",
-             "https://i.dummyjson.com/data/products/7/2.jpg",
-             "https://i.dummyjson.com/data/products/7/3.jpg",
-             "https://i.dummyjson.com/data/products/7/thumbnail.jpg"
-          ]
-       },
-       {
-          "id": 8,
-          "title":"iPhone 9",
-          "description":"An apple mobile which is nothing like apple",
-          "price":549,
-          "discountPercentage":12.96,
-          "rating":4.69,
-          "stock":94,
-          "brand":"Apple",
-          "category":"smartphones",
-          "thumbnail":"https://i.dummyjson.com/data/products/1/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/1/1.jpg",
-             "https://i.dummyjson.com/data/products/1/2.jpg",
-             "https://i.dummyjson.com/data/products/1/3.jpg",
-             "https://i.dummyjson.com/data/products/1/4.jpg",
-             "https://i.dummyjson.com/data/products/1/thumbnail.jpg"
-          ]
-       },
-       {
-          "id": 9,
-          "title":"Microsoft Surface Laptop 4",
-          "description":"Style and speed. Vibrant touchscreen.",
-          "price":1499,
-          "discountPercentage":10.23,
-          "rating":4.43,
-          "stock":68,
-          "brand":"Microsoft Surface",
-          "category":"laptops",
-          "thumbnail":"https://i.dummyjson.com/data/products/8/thumbnail.jpg",
-          "quanty": 1,
-          "images":[
-             "https://i.dummyjson.com/data/products/8/1.jpg",
-             "https://i.dummyjson.com/data/products/8/2.jpg",
-             "https://i.dummyjson.com/data/products/8/3.jpg",
-             "https://i.dummyjson.com/data/products/8/4.jpg",
-             "https://i.dummyjson.com/data/products/8/thumbnail.jpg"
-          ]
-       }
+
+   {
+      "id": 1,
+      "title":"Café Britt Espresso",
+      "description":"100% Café Arabica. Con el fin de crear el espresso perfecto, realizamos una mezcla con cualidades específicas, que obtiene como resultado un espresso ligeramente ácido que produce una crema rica y espumosa.",
+      "price":30,
+      "discountPercentage":2.92,
+      "rating":4.92,
+      "stock":54,
+      "brand":"250g / Molido",
+      "category":"Café",
+      "thumbnail":"https://www.cafebritt.com/cdn/shop/files/costa-rica-coffee-espresso-groud-340g-front-view_2048x.webp?v=1700181910",
+      "quanty": 1,
+      "images":[
+      ]
+      },
+
+      {
+         "id": 2,
+         "title":"Mérito Pinzón Cafetalero",
+         "description":"Esta tostada especial de café oscuro no es solo un reconocimiento al exquisito sabor, sino también una celebración del notable Pinzón Cafetalero, un ave endémica que encuentra su refugio entre las plantaciones de café de nuestra tierra.",
+         "price":30,
+         "discountPercentage":2.92,
+         "rating":4.92,
+         "stock":54,
+         "brand":"250g / Molido",
+         "category":"Café",
+         "thumbnail":"https://www.cafebritt.com/cdn/shop/files/costa-rican-coffee-merito-pinzon-cafetalero-whole-bean-300g-front-view.webp?v=1707835647&width=900",
+         "quanty": 1,
+         "images":[
+         ]
+         },
+
+         {
+            "id": 3,
+            "title":"Café Britt Espresso",
+            "description":"100% Café Arabica. Con el fin de crear el espresso perfecto, realizamos una mezcla con cualidades específicas, que obtiene como resultado un espresso ligeramente ácido que produce una crema rica y espumosa.",
+            "price":30,
+            "discountPercentage":2.92,
+            "rating":4.92,
+            "stock":54,
+            "brand":"250g / Molido",
+            "category":"Café",
+            "thumbnail":"https://www.cafebritt.com/cdn/shop/files/costa-rica-coffee-espresso-groud-340g-front-view_2048x.webp?v=1700181910",
+            "quanty": 1,
+            "images":[
+            ]
+            },
+
+            {
+               "id": 4,
+               "title":"Café Britt Espresso",
+               "description":"100% Café Arabica. Con el fin de crear el espresso perfecto, realizamos una mezcla con cualidades específicas, que obtiene como resultado un espresso ligeramente ácido que produce una crema rica y espumosa.",
+               "price":30,
+               "discountPercentage":2.92,
+               "rating":4.92,
+               "stock":54,
+               "brand":"250g / Molido",
+               "category":"Café",
+               "thumbnail":"https://www.cafebritt.com/cdn/shop/files/costa-rica-coffee-espresso-groud-340g-front-view_2048x.webp?v=1700181910",
+               "quanty": 1,
+               "images":[
+               ]
+               },
+               {
+                  "id": 5,
+                  "title":"Café Britt Espresso",
+                  "description":"100% Café Arabica. Con el fin de crear el espresso perfecto, realizamos una mezcla con cualidades específicas, que obtiene como resultado un espresso ligeramente ácido que produce una crema rica y espumosa.",
+                  "price":30,
+                  "discountPercentage":2.92,
+                  "rating":4.92,
+                  "stock":54,
+                  "brand":"250g / Molido",
+                  "category":"Café",
+                  "thumbnail":"https://www.cafebritt.com/cdn/shop/files/costa-rica-coffee-espresso-groud-340g-front-view_2048x.webp?v=1700181910",
+                  "quanty": 1,
+                  "images":[
+                  ]
+                  }
        
     ]

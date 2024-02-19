@@ -25,7 +25,6 @@ const CartElement = () => {
           <h3 className="title">{product.title}</h3>
           </div>
           <div className="description">
-          <span>{product.description}</span>
           <span>{product.brand}</span>
           </div>
           </div>

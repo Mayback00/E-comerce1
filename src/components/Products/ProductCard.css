@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,600;0,800;1,300;1,400;1,600;1,800&display=swap');
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  height: 376px;
+  width: 241px;
+  color: black;
+  margin-bottom: 20px;
+}
+
+.product-card .top-card {
+  background: transparent;
+  backdrop-filter: blur(8px);
+  border: 2px solid rgba(255, 255, 255, .05);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border-radius: 15px 15px 0 0;
+  height: 40%;
+  position: relative;
+}
+
+.top-card .product-image {
+  position: absolute;
+  top: -2.5rem;
+  width: 220px;
+  height: auto;
+  transform: rotate(-10deg);
+  z-index:  9;
+}
+
+.top-card .product-price {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-style: italic;
+  font-family: "Poppins", sans-serif;
+  position: absolute;
+  bottom: 0.25rem;
+  right: .75rem;
+}
+
+.product-card .bottom-card {
+  background-color: white;
+  height: 60%;
+  border-radius: 0 0 15px 15px;
+  position: relative;
+}
+
+.bottom-card .product-name {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  margin-top: 1.2rem;
+}
+
+.bottom-card .product-name h6 {
+  color: #9397a0;
+}
+
+.bottom-card .product-description p {
+  text-align: center;
+  font-size: 9px;
+  color: #545454;
+  max-width: 75%;
+  margin: auto;
+  margin-top: 1rem;
+  font-family: 'Poppins', sans-serif; /* Agregado el nombre correcto de la fuente */
+}
+
+.cta-add-to-cart {  
+  background-color: #222;
+  border-radius: 4px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #fff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 300;
+  line-height: 1.5;
+  margin: 0;
+  max-width: none;
+  min-height: 25px;
+  min-width: 10px;
+  outline: none;
+  overflow: hidden;
+  padding: 9px 20px 8px;
+  position: relative; /* Corregido, antes estaba duplicada */
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 75%;
+  left: 50%;
+  transform: translate(-50%, 30%);
+}
+
+.cta-add-to-cart:hover,
+.cta-add-to-cart:focus {
+  opacity: .75;
+}

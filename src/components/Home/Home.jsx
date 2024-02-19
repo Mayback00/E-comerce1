@@ -1,5 +1,5 @@
 import Banner from "../Banner/Banner";
-import Products from "../Products/Products";
+import ProductCard from "../Products/ProductCard";
 import "./Home.css"
 
 const Home = () => {
@@ -7,10 +7,10 @@ const Home = () => {
         <>
         <Banner />
         <div className="home-texts">
-            <h1 className="Prodcuts-title">Products</h1>
+            <h1 className="products-title">Products</h1>
         </div>
         <div className="product-card-container">
-            <Products />
+            <ProductCard />
         </div>
         </>
     )};

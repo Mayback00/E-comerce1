@@ -34,11 +34,8 @@
         background: #342e4a;
         border: none;
         cursor: pointer;
-        transition: background .7s;
 
-        &:hover {
-          background: #514776;
-        }
+      
       }
 
       & .__container {
