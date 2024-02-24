@@ -8,9 +8,11 @@ import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ProductCard from './components/Products/ProductCard';
 import Footer from './components/Footer/Footer';
+import BannerHero from './components/Banner/BannerHero';
 
 function App() {
   return (
+    <>
     <header>
       <DataProvider>
         <BrowserRouter>
@@ -21,17 +23,21 @@ function App() {
             </Routes>
             <div className="internal-container general-container">
               <Routes>
-                <Route path="product" element={<ProductCard />} />
+                <Route path="/hero" element={<BannerHero />} />
+                <Route path="/product" element={<ProductCard />} />
                 <Route path="/cart" element={<CartContent />} />
                 <Route path="/user" element={<UserLogin />} />
                 <Route path="/login" element={<LoginForm />} />
               </Routes>
             </div>
           </div>
-          <Footer />
         </BrowserRouter>
       </DataProvider>
     </header>
+          <div className='footer-app'>
+          <Footer />
+          </div>
+          </>
   );
 }
 

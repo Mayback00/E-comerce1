@@ -1,14 +1,18 @@
-import Banner from "../Banner/Banner";
+import BannerHero from "../Banner/BannerHero";
 import ProductCard from "../Products/ProductCard";
 import "./Home.css"
 
 const Home = () => {
     return (
         <>
-        <Banner />
+        <div className="banner-container">
+        <BannerHero />
         <div className="home-container">
             <h1 className="products-title">Productos</h1>
-            <ProductCard />
+            <div className="product-card-home">
+                <ProductCard />
+        </div>
+        </div>
         </div>
         </>
     )};

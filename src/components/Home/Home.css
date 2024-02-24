@@ -1,8 +1,17 @@
 
-
+.home-banner-swiper{
+  position: relative;
+}
 
 .home-container h1 {
   text-align: center;
   margin-bottom: 20px;
   margin-top: 60px;
 }
+
+.product-card-home {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 5%;
+}
+

@@ -15,8 +15,8 @@ const ProductCard = () => {
   return (
     <section id="tranding">
       <div className="container">
-        <h3 className="text-center section-subheading">- Premium Coffee - </h3>
-        <h1 className="text-center section-heading">Select Yours</h1>
+        <h3 className="text-center section-subheading">- Café de Calidad - </h3>
+        <h1 className="text-center section-heading">Elige el tuyo</h1>
       </div>
       <Swiper
         modules={[Navigation, A11y, EffectCoverflow]}

@@ -1,16 +1,18 @@
 .banner {
     background-position: center;
-    height: 50vh;
+    height: 40vh;
     width: 100vw;
 }
 
 .banner-container {
+    display: flex;
+    flex-direction: column;
     text-align: center;
-    padding: 15% 0;
+    padding: 12% 0;
+    justify-content: center;
 }
 
 .banner h1 {
-    margin: 0;
     color: white;
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
     font-size: 62px;

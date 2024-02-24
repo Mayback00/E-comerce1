@@ -1,5 +1,10 @@
-import { FaFacebook, FaInstagram, FaWhatsapp, FaLinkedin } from "react-icons/fa";
-import "./Footer.css"
+import {
+  FaFacebook,
+  FaInstagram,
+  FaWhatsapp,
+  FaLinkedin,
+} from "react-icons/fa";
+import "./Footer.css";
 
 const Footer = () => {
   return (
@@ -52,30 +57,52 @@ const Footer = () => {
             </a>
           </div>
           <div className="sb_footer-links_div">
-                <h4>Muy pronto en</h4>
-                <div className="socialmedia">
-                    <p><FaFacebook /></p>
-                    <p><FaInstagram /></p>
-                    <p><FaWhatsapp /></p>
-                    <p><FaLinkedin /></p>
-                </div>
-            </div>
-          <hr></hr>
-
-          <div className="sb_footer-below">
-            <div className="sb_footer-copyright">
-                <p>
-                    @{new Date().getFullYear()} Mayback. All right reserved.
-                </p>
-            </div>
-            <div className="sb_footer-below-links">
-                <a href="/termns"><div><p>Terminos y Condiciones</p></div></a>
-                <a href="/provacy"><div><p>Privacidad</p></div></a>
-                <a href="/security"><div><p>Seguridad</p></div></a>
-                <a href="/cookie"><div><p>Declaración de Cookies</p></div></a>
+            <h4>Muy pronto en</h4>
+            <div className="socialmedia">
+              <p>
+                <FaFacebook />
+              </p>
+              <p>
+                <FaInstagram />
+              </p>
+              <p>
+                <FaWhatsapp />
+              </p>
+              <p>
+                <FaLinkedin />
+              </p>
             </div>
           </div>
-        </div>
+          <hr></hr>
+          </div>
+          <div className="sb_footer-below">
+            <div className="sb_footer-copyright">
+              <p>@{new Date().getFullYear()} Mayback. All right reserved.</p>
+            </div>
+            <div className="sb_footer-below-links">
+              <a href="/termns">
+                <div>
+                  <p>Terminos y Condiciones</p>
+                </div>
+              </a>
+              <a href="/provacy">
+                <div>
+                  <p>Privacidad</p>
+                </div>
+              </a>
+              <a href="/security">
+                <div>
+                  <p>Seguridad</p>
+                </div>
+              </a>
+              <a href="/cookie">
+                <div>
+                  <p>Declaración de Cookies</p>
+                </div>
+              </a>
+            </div>
+          </div>
+        
       </div>
     </div>
   );
