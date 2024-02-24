@@ -7,6 +7,7 @@ import UserLogin from './components/Users/UserLogin';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ProductCard from './components/Products/ProductCard';
+import ProductCarousel from './components/Carousel/ProductCarousel';
 
 
 function App() {
@@ -21,6 +22,7 @@ function App() {
             </Routes>
             <div className="internal-container general-container">
               <Routes>
+                <Route path="carousel" element={<ProductCarousel />} />
                 <Route path="product" element={<ProductCard />} />
                 <Route path="/cart" element={<CartContent />} />
                 <Route path="/user" element={<UserLogin />} />

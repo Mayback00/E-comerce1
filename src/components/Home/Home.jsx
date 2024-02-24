@@ -6,10 +6,8 @@ const Home = () => {
     return (
         <>
         <Banner />
-        <div className="home-texts">
-            <h1 className="products-title">Products</h1>
-        </div>
-        <div className="product-card-container">
+        <div className="home-container">
+            <h1 className="products-title">Productos</h1>
             <ProductCard />
         </div>
         </>

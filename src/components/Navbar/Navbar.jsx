@@ -17,7 +17,6 @@ const Navbar = () => {
         </Link>
         <div className="navbar-right">
         <Link to={"product"} className="items">Product</Link>
-        <Link to={"user"} className="items">User</Link>
         <Link to={"login"} className="items">Login<MdLogin className="login-icon" /></Link>
         <Link to={"cart"} className="navbar-link-cart items">
         <FaCartPlus />{cart.length > 0 ? <TotalItems /> : null}
