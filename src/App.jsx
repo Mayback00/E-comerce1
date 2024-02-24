@@ -7,8 +7,7 @@ import UserLogin from './components/Users/UserLogin';
 import Navbar from './components/Navbar/Navbar';
 import { BrowserRouter, Routes, Route } from "react-router-dom"
 import ProductCard from './components/Products/ProductCard';
-import ProductCarousel from './components/Carousel/ProductCarousel';
-
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
             </Routes>
             <div className="internal-container general-container">
               <Routes>
-                <Route path="carousel" element={<ProductCarousel />} />
                 <Route path="product" element={<ProductCard />} />
                 <Route path="/cart" element={<CartContent />} />
                 <Route path="/user" element={<UserLogin />} />
@@ -30,6 +28,7 @@ function App() {
               </Routes>
             </div>
           </div>
+          <Footer />
         </BrowserRouter>
       </DataProvider>
     </header>
