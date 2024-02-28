@@ -6,7 +6,6 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import { EffectFade } from "swiper/modules";
 import "./ProductCard.css";
 
 const ProductCard = () => {
@@ -31,7 +30,7 @@ const ProductCard = () => {
           stretch: 0,
           depth: 100,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }}
         navigation={true}
         onSwiper={(swiper) => console.log(swiper)}

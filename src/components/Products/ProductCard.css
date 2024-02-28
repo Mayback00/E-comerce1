@@ -44,8 +44,7 @@
 
 .product-card .top-card {
   margin-top: 38px;
-  background: transparent;
-  backdrop-filter: blur(8px);
+  background: #453730;
   border: 2px solid rgba(255, 255, 255, .05);
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
   border-radius: 15px 15px 0 0;
@@ -78,10 +77,15 @@
   right: .75rem;
 }
 
+.container h3{
+  color: #222;
+}
+
 .product-card .bottom-card {
   background-color: white;
   height: 60%;
   border-radius: 0 0 15px 15px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
 .bottom-card .product-name {
@@ -143,5 +147,5 @@
 
 .cta-add-to-cart:hover,
 .cta-add-to-cart:focus {
-  opacity: .75;
+  background-color: #454545;
 }

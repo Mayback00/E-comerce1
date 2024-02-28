@@ -13,6 +13,14 @@
   text-align: center;
 }
 
+
+@media only screen and (max-width: 768px) {
+  .CoffeeCupImg {
+    width: 50%;
+    right: -10%;
+  }
+}
+
 .swiper-pagination-bullet-active {
   opacity: var(--swiper-pagination-bullet-opacity, 1);
   background: orangered;

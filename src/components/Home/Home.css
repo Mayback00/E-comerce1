@@ -1,6 +1,54 @@
+.banner-container {
+  display: flex;
+  justify-content: center;
+  width: 100vw;
+}
 
-.home-banner-swiper{
-  position: relative;
+.home-container {
+  justify-content: center;
+}
+
+.hero-content {
+  user-select: none;
+  width: 65%;
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 9;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  z-index: 10;
+  align-self: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+}
+
+.call-to-action h1{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+
+.call-to-action h4 {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.coffee-cup-container {
+  display: flex;
+  justify-content: center;
+  width: 35%;
+  user-select: none;
+  z-index: 9;
 }
 
 .home-container h1 {
@@ -12,6 +60,77 @@
 .product-card-home {
   display: flex;
   justify-content: center;
-  margin-bottom: 5%;
+  top: 20%;
 }
 
+
+.call-to-action-button {
+  background-color: #ffffff;
+  border-radius: 25px;
+  border: none;
+  box-sizing: border-box;
+  color: #191919;
+  cursor: pointer;
+  font-family: "Poppins", sans-serif;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.5;
+  margin: 0;
+  max-width: 120px;
+  max-height: 30px;
+  min-height: 25px;
+  min-width: 10px;
+  outline: none;
+  padding: 2px 10px 2px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: 100%;
+  box-shadow: rgba(0, 0, 0, 0.5);
+}
+
+.call-to-action-button:hover {
+  background-color: #386131;
+  color: #ffffff;
+}
+
+@media screen and (max-width: 768px) {
+  .hero-content {
+    width: 80%;
+  }
+
+  .call-to-action {
+    width: 80%;
+  }
+
+  .coffee-cup-container {
+    width: 50%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero-content {
+    width: 90%;
+  }
+
+  .call-to-action {
+    margin-top:  10rem;
+    width: 90%;
+    margin-left: 2rem;
+  }
+
+  .call-to-action h1{
+    font-size: 30px;
+  }
+
+  .coffee-cup-container {
+    width: 100%;
+  }
+
+  .home-container {
+    overflow: hidden;
+  }
+}

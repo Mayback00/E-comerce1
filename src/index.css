@@ -5,10 +5,10 @@
   height: 100%;
 }
 
-.bg {
+/*.bg {
   height: 100%;
   background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
-}
+}*/
 
 .internal-container {
   justify-content: center;
@@ -23,7 +23,7 @@
 }
 
 body {
-  width: 100vw;
+  width: 100vw; 
   height:  100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
@@ -31,13 +31,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   min-height: 100vh;
   color: white;
-  background: url('../assets/img/background.jpg') no-repeat  fixed center / cover ;
-
+  overflow-x: hidden;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
-
