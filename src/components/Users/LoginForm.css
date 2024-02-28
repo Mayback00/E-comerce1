@@ -4,10 +4,19 @@
    display: flex;
    justify-content: center;
    align-items: center;
+}
+
+.background-user{
+   display: flex;
+   justify-content: center;
+   height: 100vh;
+   width: 100vw;
+   position: fixed;
    background-image: url("https://images.alphacoders.com/210/210731.jpg");
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
+   z-index: -99;
 }
 
 .wrapper {

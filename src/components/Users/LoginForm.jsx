@@ -4,6 +4,7 @@ import { FaUser, FaLock } from "react-icons/fa";
 const LoginForm = () => {
   return (
     <>
+        <div className="background-user"></div>
     <div className="login-container">
         <div className='wrapper'>
             <form action="">

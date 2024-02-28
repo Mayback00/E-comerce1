@@ -6,14 +6,14 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
-import "./ProductCard.css";
+import "./CardsSwiper.css";
 
 
 const CardsSwiper = () => {
     const { data, cart, setCart, buyProducts } = useContext(dataContext);
 
 return (
-    <div id="container">
+    <div id="a-container">
 
      <Swiper
         effect={'coverflow'}
@@ -35,36 +35,36 @@ return (
           clickable: true,
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
-        className="swiper_container"
+        className="a-swiper_container"
       >
         {data.map((product) => (
-          <div className="swiper-wrapper">
-        <SwiperSlide className="product-card" key={product.id}>
-              <div className="image-container">
+          <div className="a-swiper-wrapper">
+        <SwiperSlide className="a-product-card" key={product.id}>
+              <div className="a-image-container">
                 <img
                   src={product.thumbnail}
-                  className="product-image"
+                  className="a-product-image"
                   alt={product.title}
                 />
               </div>
-              <div className="top-card">
+              <div className="a-top-card">
                 {/* image, price */}
-                <span className="product-price">
+                <span className="a-product-price">
                   $<b>{product.price}</b>
                 </span>
               </div>
-              <div className="bottom-card">
+              <div className="a-bottom-card">
                 {/* title, description, brand */}
-                <div className="product-name">
+                <div className="a-product-name">
                   <h6>{product.brand}</h6>
                   <h4>{product.title}</h4>
                 </div>
-                <div className="product-description">
+                <div className="a-product-description">
                   <p>{product.description}</p>
                 </div>
                 <button
                   type="button"
-                  className="cta-add-to-cart"
+                  className="a-cta-add-to-cart"
                   onClick={() => buyProducts(product)}
                 >
                   Añadir al Carrito

@@ -9,17 +9,19 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 const GeneralProducts = () => {
+  const { data, cart, setCart, buyProducts } = useContext(dataContext);
+
   return (
     <div className="card-instance">
         <div className="card-instance-space">
             <div className="cardui-header title-block">
-                <h2 className="color-base title-block-left">Lo mejor del café</h2>
-                <a href="" className="normal-link title-block-right"></a>
+                <h2 className="color-base title-block-left">Lo mejor del café.</h2>
+                <a href="" className="normal-link title-block-right">Más café</a>
             </div>
             <div className="a-section card-instance-internal-space">
                 <div className="a-section carousel-viewport">
                 <Swiper
-        spaceBetween={30}
+      
         navigation={true}
         slidesPerView={1}
         centeredSlides={false}
@@ -35,16 +37,23 @@ const GeneralProducts = () => {
         className="instance-swiper"
       >
         <div className="swiper-slide-bg">
-        <SwiperSlide className="card-instances-sipers-slide">Slide 1</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 2</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 3</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 4</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 5</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 6</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 7</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 8</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 9</SwiperSlide>
-        <SwiperSlide className="card-instances-sipers-slide">Slide 10</SwiperSlide>
+        {data.map((product) => (
+
+          <div className="swiper-wrapper">
+            {/*sliderstart*/}
+
+            <SwiperSlide className="general-product-card" key={product.id}>
+              <div className="general-image-container">
+                <img
+                  src={product.thumbnail}
+                  className="general-product-image"
+                  alt={product.title}
+                />
+              </div>
+            </SwiperSlide>
+            {/*/!*sliderend*!/*/}
+          </div>
+          ))}
         </div>
       </Swiper>
                 </div>

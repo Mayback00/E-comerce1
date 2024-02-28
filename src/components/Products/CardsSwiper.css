@@ -9,32 +9,28 @@
 }
 /*Swiper start*/
 
-.container {
-  display: flex;
-  flex-direction: column;
+.a-container {
   max-width: 124rem;
-  justify-content: center;
-  align-items: center;
+  padding-right: 0 1rem;
+  margin: 0 auto;
 }
-
-.text-center {
+.a-text-center {
   text-align: center;
-  justify-content: center;
 }
 
-.section-heading {
+.a-section-heading {
   font-size: 3rem;
   color: var(--primary);
-  padding-bottom: 3rem;
+  padding: 0.5rem 0;
 }
 
-.my-swiper{
+.a-swiper_container{
   width: 900px;
 }
 
 /*Swiper end*/
 
-.product-card {
+.a-product-card {
   user-select: none;
   display: flex;
   flex-direction: column;
@@ -46,7 +42,7 @@
   max-width: 260px;
 }
 
-.product-card .top-card {
+.a-product-card .a-top-card {
   margin-top: 38px;
   background: #453730;
   border: 2px solid rgba(255, 255, 255, .05);
@@ -56,7 +52,7 @@
   position: relative;
 }
 
-.image-container{
+.a-image-container{
   position: absolute;
   z-index:  9;
   left: 50%;
@@ -64,13 +60,13 @@
   top: -15px;
 }
 
-.product-image {
+.a-product-image {
   width: 220px;
   height: auto;
   transform: rotate(-10deg);
 }
 
-.top-card .product-price {
+.a-top-card .a-product-price {
   color: white;
   font-size: 1.5rem;
   font-weight: 600;
@@ -81,18 +77,18 @@
   right: .75rem;
 }
 
-.container h3{
+.a-container h3{
   color: #222;
 }
 
-.product-card .bottom-card {
+.a-product-card .a-bottom-card {
   background-color: white;
   height: 60%;
   border-radius: 0 0 15px 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, .2);
 }
 
-.bottom-card .product-name {
+.a-bottom-card .a-product-name {
   text-align: center;
   display: flex;
   flex-direction: column;
@@ -100,17 +96,17 @@
   margin-top: 1.2rem;
 }
 
-.bottom-card .product-name h6 {
+.a-bottom-card .a-product-name h6 {
   color: #9397a0;
 }
 
-.product-description{
+.a-product-description{
   height: 90px;
   overflow:auto;
   scrollbar-width:  none;
 }
 
-.bottom-card .product-description p {
+.a-bottom-card .a-product-description p {
   text-align: center;
   font-size: 9px;
   color: #545454;
@@ -120,7 +116,7 @@
   font-family: 'Poppins', sans-serif; /* Agregado el nombre correcto de la fuente */
 }
 
-.cta-add-to-cart {  
+.a-cta-add-to-cart {  
   background-color: #222;
   border-radius: 4px;
   border-style: none;
@@ -149,7 +145,7 @@
   transform: translate(-50%, 30%);
 }
 
-.cta-add-to-cart:hover,
-.cta-add-to-cart:focus {
+.a-cta-add-to-cart:hover,
+.a-cta-add-to-cart:focus {
   background-color: #454545;
 }
