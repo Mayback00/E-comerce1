@@ -8,6 +8,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom"
 import Footer from './components/Footer/Footer';
 import BannerHero from './components/Banner/BannerHero';
 import CardsSwiper from './components/Products/CardsSwiper';
+import GeneralProducts from './components/Products/GeneralProducts';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
             </Routes>
             <div className="internal-container general-container">
               <Routes>
+                <Route path="/general-product" element={<GeneralProducts />} />
                 <Route path="/hero" element={<BannerHero />} />
                 <Route path="/product" element={<CardsSwiper />} />
                 <Route path="/cart" element={<CartContent />} />

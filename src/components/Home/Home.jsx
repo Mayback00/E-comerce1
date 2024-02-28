@@ -33,6 +33,9 @@ const Home = () => {
           <div className="product-card-home">
             <ProductCard />
           </div>
+          <div className="general-products">
+            
+          </div>
         </div>
       </section>
     </>
