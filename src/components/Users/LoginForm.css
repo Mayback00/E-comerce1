@@ -1,12 +1,16 @@
 .login-container {
-   height: 100vh;
-   width: 100%;
-   display: flex;
-   justify-content: center;
-   align-items: center;
+  height: 1000px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
 }
 
 .background-user{
+   position: absolute;
    display: flex;
    justify-content: center;
    height: 100vh;

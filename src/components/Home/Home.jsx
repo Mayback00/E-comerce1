@@ -3,6 +3,7 @@ import BannerHero from "../Banner/BannerHero";
 import CoffeeCups from "../Banner/CoffeeCups";
 import ProductCard from "../Products/ProductCard";
 import GeneralProducts from "../Products/GeneralProducts";
+import SpecialOffers from "../Products/SpecialOffers";
 import "./Home.css";
 
 const Home = () => {
@@ -15,7 +16,6 @@ const Home = () => {
             <h4>PUEDES SENTIR LA ENERGÍA</h4>
             <h1>Comienza tu día con un café</h1>
             <button className="call-to-action-button">COMPRA AHORA</button>
-            <h4></h4>
           </div>
 
           {/* Coffee Cups Section */}
@@ -36,6 +36,11 @@ const Home = () => {
           <div className="general-products">
             <div className="home-card-instance">
             <GeneralProducts />
+            </div>
+          </div>
+          <div className="general-products">
+            <div className="home-card-instance">
+            <SpecialOffers />
           </div>
           </div>
         </div>

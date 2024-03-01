@@ -5,10 +5,7 @@
   height: 100%;
 }
 
-/*.bg {
-  height: 100%;
-  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.7));
-}*/
+
 
 .internal-container {
   justify-content: center;
@@ -23,8 +20,8 @@
 }
 
 body {
+  position: relative;
   width: 100vw; 
-  height:  100vh;
   margin: 0;
   font-family: "Poppins", sans-serif;
   -webkit-font-smoothing: antialiased;

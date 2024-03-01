@@ -13,11 +13,11 @@ import GeneralProducts from "./components/Products/GeneralProducts";
 function App() {
   return (
     <>
+     <div className="a-app">
       <header>
         <DataProvider>
           <BrowserRouter>
             <Navbar />
-            <div className="general-container bg">
                 <Routes>
                   <Route path="/" element={<Home />} />
                   <Route
@@ -31,12 +31,12 @@ function App() {
                   <Route path="/login" element={<LoginForm />} />
                   <Route path="/cardswiper" element={<CardsSwiper />} />
                 </Routes>
-            </div>
           </BrowserRouter>
         </DataProvider>
       </header>
       <div className="footer-app">
         <Footer />
+      </div>
       </div>
     </>
   );
