@@ -13,6 +13,43 @@
   text-align: center;
 }
 
+.hero-content {
+  user-select: none;
+  width: 100%;
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  z-index: 9;
+  justify-content: space-around;
+}
+
+.call-to-action {
+  display: flex;
+  flex-direction: column;
+  width: 20%;
+  z-index: 10;
+  align-self: center;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  transform: translateY(-50%);
+}
+
+.call-to-action h1{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.2;
+  padding-bottom: 20px;
+}
+
+.call-to-action h4 {
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.coffee-cup-container {
+  width: 300px;
+  user-select: none;
+  z-index: 9;
+}
 
 @media only screen and (max-width: 768px) {
   .CoffeeCupImg {

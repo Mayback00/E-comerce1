@@ -10,24 +10,10 @@ const Home = () => {
   return (
     <>
       <section className="hero-container">
-        <div className="hero-content">
-          {/* Call to Action */}
-          <div className="call-to-action">
-            <h4>PUEDES SENTIR LA ENERGÍA</h4>
-            <h1>Comienza tu día con un café</h1>
-            <button className="call-to-action-button">COMPRA AHORA</button>
-          </div>
-
-          {/* Coffee Cups Section */}
-          <div className="coffee-cup-container">
-            <CoffeeCups />
-          </div>
-        </div>
         {/* Banner Section */}
-        <div className="banner-container">
+        <header className="banner-container">
           <BannerHero />
-        </div>
-
+        </header>
         {/* Products Section */}
         <div className="home-container">
           <div className="product-card-home">

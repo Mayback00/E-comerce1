@@ -13,30 +13,27 @@ import GeneralProducts from "./components/Products/GeneralProducts";
 function App() {
   return (
     <>
-     <div className="a-app">
-      <header>
+      <div className="a-app">
         <DataProvider>
           <BrowserRouter>
-            <Navbar />
-                <Routes>
-                  <Route path="/" element={<Home />} />
-                  <Route
-                    path="/general-product"
-                    element={<GeneralProducts />}
-                  />
-                  <Route path="/hero" element={<BannerHero />} />
-                  <Route path="/product" element={<CardsSwiper />} />
-                  <Route path="/cart" element={<CartContent />} />
-                  <Route path="/user" element={<LoginForm />} />
-                  <Route path="/login" element={<LoginForm />} />
-                  <Route path="/cardswiper" element={<CardsSwiper />} />
-                </Routes>
+            <header>
+              <Navbar />
+            </header>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/general-product" element={<GeneralProducts />} />
+              <Route path="/hero" element={<BannerHero />} />
+              <Route path="/product" element={<CardsSwiper />} />
+              <Route path="/cart" element={<CartContent />} />
+              <Route path="/user" element={<LoginForm />} />
+              <Route path="/login" element={<LoginForm />} />
+              <Route path="/cardswiper" element={<CardsSwiper />} />
+            </Routes>
           </BrowserRouter>
         </DataProvider>
-      </header>
-      <div className="footer-app">
-        <Footer />
-      </div>
+        <div className="footer-app">
+          <Footer />
+        </div>
       </div>
     </>
   );
