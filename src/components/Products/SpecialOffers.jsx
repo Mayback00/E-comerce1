@@ -15,8 +15,8 @@ const SpecialOffers = () => {
     <div className="offer-card-instance">
         <div className="offer-card-instance-space">
             <div className="offer-cardui-header offer-title-block">
-                <h2 className="color-base offer-title-block-left">Lo mejor del café.</h2>
-                <a href="" className="normal-link offer-title-block-right">Más café</a>
+                <h2 className="color-base offer-title-block-left">Ofertas especiales.</h2>
+                <a href="" className="normal-link offer-title-block-right">Todas las ofertas</a>
             </div>
             <div className="offer-a-section offer-card-instance-internal-space">
                 <div className="offer-a-section offer-carousel-viewport">
