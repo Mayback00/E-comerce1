@@ -1,7 +1,7 @@
 import { useContext } from "react";
 import { dataContext } from "../Context/DataContext";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Navigation, Pagination, A11y } from "swiper/modules";
+import { EffectCoverflow, Navigation, Pagination} from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -13,7 +13,7 @@ const CardsSwiper = () => {
     const { data, cart, setCart, buyProducts } = useContext(dataContext);
 
 return (
-    <div id="a-container">
+    <div id="a-product-container">
 
      <Swiper
         effect={'coverflow'}

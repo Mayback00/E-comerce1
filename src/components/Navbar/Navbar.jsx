@@ -16,7 +16,7 @@ const Navbar = () => {
           <h1 className="navbar-logo"><SiCoffeescript /></h1>
         </Link>
         <div className="navbar-right">
-        <Link to={"product"} className="items">Product</Link>
+        <Link to={"products"} className="items">Products</Link>
         <Link to={"login"} className="items">Login<MdLogin className="login-icon" /></Link>
         <Link to={"cart"} className="navbar-link-cart items">
         <FaCartPlus />{cart.length > 0 ? <TotalItems /> : null}

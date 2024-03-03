@@ -7,8 +7,8 @@ import Navbar from "./components/Navbar/Navbar";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Footer from "./components/Footer/Footer";
 import BannerHero from "./components/Banner/BannerHero";
-import CardsSwiper from "./components/Products/CardsSwiper";
 import GeneralProducts from "./components/Products/GeneralProducts";
+import ProductList from "./components/Products/ProductList";
 
 function App() {
   return (
@@ -23,11 +23,10 @@ function App() {
               <Route path="/" element={<Home />} />
               <Route path="/general-product" element={<GeneralProducts />} />
               <Route path="/hero" element={<BannerHero />} />
-              <Route path="/product" element={<CardsSwiper />} />
+              <Route path="/products" element={<ProductList />} />
               <Route path="/cart" element={<CartContent />} />
               <Route path="/user" element={<LoginForm />} />
               <Route path="/login" element={<LoginForm />} />
-              <Route path="/cardswiper" element={<CardsSwiper />} />
             </Routes>
           </BrowserRouter>
         </DataProvider>

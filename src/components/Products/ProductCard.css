@@ -119,6 +119,10 @@
   scrollbar-width:  none;
 }
 
+.swiper-button-prev, .swiper-button-next {
+  color: #222;
+}
+
 .cta-add-to-cart {  
   background-color: #222;
   border-radius: 4px;

@@ -31,7 +31,7 @@ const CartElement = () => {
           <div className="counter-box">
           <CartItemCounter product={product} />
           </div>
-          <h4 className="price">${product.price * product.quanty}</h4>
+          <h4 className="price">${product.price * product.quantity}</h4>
         </div>
       ))}
     </div>

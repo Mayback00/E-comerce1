@@ -1,5 +1,6 @@
 import React, { useRef, useState } from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { useNavigate } from "react-router-dom";  // Importa useNavigate
 import BBG1 from "./images/BBG-01.png";
 import BBG2 from "./images/BBG-02.png";
 import BBG3 from "./images/BBG-03.png";
@@ -15,6 +16,13 @@ import "./BannerHero.css";
 import { Autoplay, EffectFade, Navigation, Pagination } from "swiper/modules";
 
 const BannerHero = () => {
+  const navigate = useNavigate();  // Obtén la función navigate
+
+  const handleBuyNow = () => {
+    // Llama a navigate con la ruta deseada
+    navigate("/products");
+  };
+
   return (
     <>
       <div className="hero-content">
@@ -22,7 +30,9 @@ const BannerHero = () => {
         <div className="call-to-action">
           <h4>PUEDES SENTIR LA ENERGÍA</h4>
           <h1>Comienza tu día con un café</h1>
-          <button className="call-to-action-button">COMPRA AHORA</button>
+          <button className="call-to-action-button" onClick={handleBuyNow}>
+            COMPRA AHORA
+          </button>
         </div>
 
         {/* Coffee Cups Section */}

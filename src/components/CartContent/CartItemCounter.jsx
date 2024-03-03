@@ -7,16 +7,22 @@ const CartItemCounter = ({ product }) => {
 
     
 
-    const decrese =  ()=>{
-     const productrepeat = cart.find((item) => item.id === product.id);
-     productrepeat.quanty !== 1 &&
-        setCart(cart.map((item)=> (item.id === product.id ? {...product, quanty: productrepeat.quanty - 1 } : item)));
-    };
+    const decrese = () => {
+  const productrepeat = cart.find((item) => item.id === product.id);
+  productrepeat.quantity !== 1 &&
+    setCart(
+      cart.map((item) =>
+        item.id === product.id
+          ? { ...item, quantity: productrepeat.quantity - 1 }
+          : item
+      )
+    );
+};
 
   return (
     <>
     <p className="counter-button" onClick={()=> buyProducts(product)}><FaPlusCircle /></p>
-    <p className="quanty-number">{product.quanty}</p>
+    <p className="quanty-number">{product.quantity}</p>
     <p className="counter-button" onClick={decrese}><FaMinusCircle /></p>
     </>
   )
