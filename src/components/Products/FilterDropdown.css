@@ -1,0 +1,65 @@
+/* Estilos generales del menú desplegable */
+.dropdown-container, .menu-filters{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: row;
+    width:  100%;
+    justify-content: center;
+}
+
+.menu-filters {
+
+    width: 60%;
+    justify-content: space-between;
+}
+
+.dropdown {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: none;
+  }
+  
+  .dropdown.show {
+    display: block;
+  }
+  
+  /* Estilos del ítem de menú */
+  .menu-items {
+    position: relative;
+  }
+  
+  .menu-items button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 10px;
+    font-size: 16px;
+  }
+  
+  /* Estilos del ícono de flecha */
+  .menu-items .arrow {
+    margin-left: 5px;
+  }
+  
+  /* Estilos del submenú */
+  .dropdown-submenu {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    margin-top: 0;
+    display: none;
+  }
+  
+  .dropdown-submenu.show {
+    display: block;
+  }
+  
+  /* Estilos para los ítems del submenú */
+  .dropdown-submenu .menu-items button {
+    padding: 8px;
+  }
+  
+  /* Estilos adicionales según sea necesario */
+  /* Añade tus estilos personalizados aquí */
+  

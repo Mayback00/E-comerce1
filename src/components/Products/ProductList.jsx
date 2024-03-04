@@ -6,6 +6,7 @@ import {
   FaStar,
   FaFireAlt,
 } from "react-icons/fa";
+import FilterNavbar from "./FilterNavbar";
 import ProductCounter from "./ProductCounter";
 import "./ProductList.css";
 
@@ -13,6 +14,10 @@ const ProductList = () => {
   const { data, cart, setCart, buyProducts } = useContext(dataContext);
 
   return (
+    <div className="product-list">
+    <div  className="product-list-filter">
+      <FilterNavbar />
+    </div>
     <div className="main-product-container">
       {data.map((product) => (
         <section className="main-product-list" key={product.id}>
@@ -54,6 +59,7 @@ const ProductList = () => {
           </div>
         </section>
       ))}
+    </div>
     </div>
   );
 };
